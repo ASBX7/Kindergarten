@@ -11,8 +11,26 @@ body {
     color: #333; /* Dark gray text to keep it readable */
 }
 
+.NavigationContainer {
+    background-color: #2c7c96;
+    display: flex;
+    flex-direction: row;
+    height: 50px;
+    width: 800px;
+    justify-content: center;
+}
+
+.NavigationContainer div {
+    margin: 10px;
+    padding: 5px;
+    background-color: #b9d4f0;
+    width: 200px;
+    font-size: 12px;
+    text-align: center;
+}
+
 h1, h2 {
-    color: #FF6F61; /* Selected this color to give the headers a warm, inviting feel */
+    color: #2c7c96; /* Selected this color to give the headers a warm, inviting feel */
 }
 
 h1 {
@@ -28,7 +46,7 @@ h1 {
 
 /* Simple header styling */
 header {
-    background-color: #FFDDC1; /* Selected a soft color to make the header stand out but still feel light */
+    background-color: #b9d4f0; /* Selected a soft color to make the header stand out but still feel light */
     padding: 10px; /* Space inside the header to make it feel less cramped */
 }
 
@@ -44,12 +62,12 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none; /* No underline on the links */
-    color: #FF6F61; /* Same color as headers to keep things consistent */
+    color: #2c7c96; /* Same color as headers to keep things consistent */
     font-weight: bold; /* Making the links bold so they're easy to spot */
 }
 
 nav ul li a:hover {
-    color: #FFA07A; /* Slight color change on hover to make it clear the links are interactive */
+    color: #0317f7; /* Slight color change on hover to make it clear the links are interactive */
 }
 
 /* Adding space around the main content */
@@ -63,10 +81,17 @@ section {
 
 /* Styling the gallery images */
 #gallery img {
-    width: 150px; /* Keeping the images small for a neat layout */
+    width: 220px; /* Keeping the images small for a neat layout */
     margin: 10px; /* Space between images to make them easier to view */
     border-radius: 10px; /* Rounded corners just to make them look a bit nicer */
     transition: transform 0.5s; /* Adding a smooth zoom effect when hovering */
+    height: 150px;
+}
+
+.gallery {
+    display: flex; /* Laying out the images horizontally */
+    margin: 0 auto;
+    justify-content: center;
 }
 
 #gallery img:hover {
@@ -95,7 +120,7 @@ tr:nth-child(even) {
 
 /* Footer is styled similarly to the header for consistency */
 footer {
-    background-color: #FFDDC1;
+    background-color: #b9d4f0;
     text-align: center;
     padding: 10px;
 }
