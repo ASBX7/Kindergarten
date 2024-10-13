@@ -1,112 +1,116 @@
-/* General Styles */
+/* Resetting default margin and padding for everything */
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: border-box; /* Keeps elements from getting bigger when padding is added */
 }
 
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #f9f9f9;
-    color: #333;
+    background-color: #f9f9f9; /* Light background to keep it simple and clean */
+    color: #333; /* Dark gray text to keep it readable */
 }
 
 h1, h2 {
-    color: #FF6F61;
+    color: #FF6F61; /* Selected this color to give the headers a warm, inviting feel */
 }
 
-h1 {text-align: center;}
+h1 {
+    text-align: center; /* Centering the main title for better presentation */
+}
 
-/* Container for main content and header */
+/* Keeping the content within a max width and centering it */
 .container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 20px;
+    padding: 20px; /* Adding space inside to prevent the content from touching the edges */
 }
 
-/* Header Styles */
+/* Simple header styling */
 header {
-    background-color: #FFDDC1;
-    padding: 10px;
+    background-color: #FFDDC1; /* Selected a soft color to make the header stand out but still feel light */
+    padding: 10px; /* Space inside the header to make it feel less cramped */
 }
 
 nav ul {
-    display: flex;
-    list-style: none;
-    justify-content: space-around;
+    display: flex; /* Laying out the navigation links horizontally */
+    list-style: none; /* Removed default bullets since they're not needed here */
+    justify-content: space-around; /* Spread out the links evenly */
 }
 
 nav ul li {
-    margin: 0 10px;
+    margin: 0 10px; /* Added small space between the links for better readability */
 }
 
 nav ul li a {
-    text-decoration: none;
-    color: #FF6F61;
-    font-weight: bold;
+    text-decoration: none; /* No underline on the links */
+    color: #FF6F61; /* Same color as headers to keep things consistent */
+    font-weight: bold; /* Making the links bold so they're easy to spot */
 }
 
 nav ul li a:hover {
-    color: #FFA07A;
+    color: #FFA07A; /* Slight color change on hover to make it clear the links are interactive */
 }
 
-/* Main Section Styling */
+/* Adding space around the main content */
 main {
     padding: 20px;
 }
 
 section {
-    margin: 20px 0;
+    margin: 20px 0; /* Adding space between sections so it doesn’t look too packed */
 }
 
+/* Styling the gallery images */
 #gallery img {
-    width: 150px;
-    margin: 10px;
-    border-radius: 10px;
-    transition: transform 0.5s; /* Add hover effect */
+    width: 150px; /* Keeping the images small for a neat layout */
+    margin: 10px; /* Space between images to make them easier to view */
+    border-radius: 10px; /* Rounded corners just to make them look a bit nicer */
+    transition: transform 0.5s; /* Adding a smooth zoom effect when hovering */
 }
 
 #gallery img:hover {
-    transform: scale(1.1);
+    transform: scale(1.1); /* Slight zoom on hover for some interactivity */
 }
 
+/* Styling the table */
 table {
-    width: 100%;
-    border-collapse: collapse;
-    margin: 20px 0;
+    width: 100%; /* Full width so the table adjusts to the screen size */
+    border-collapse: collapse; /* Removing the gaps between table borders */
+    margin: 20px 0; /* Space above and below the table */
 }
 
 table, th, td {
-    border: 1px solid #ccc;
+    border: 1px solid #ccc; /* Light border to keep it simple and clean */
 }
 
 th, td {
-    padding: 10px;
-    text-align: center;
+    padding: 10px; /* Added padding inside cells for readability */
+    text-align: center; /* Centering text to keep it tidy */
 }
 
 tr:nth-child(even) {
-    background-color: #f2f2f2; /* Add alternating row colors */
+    background-color: #f2f2f2; /* Alternating row colors to make it easier to read */
 }
 
-/* Footer Styling */
+/* Footer is styled similarly to the header for consistency */
 footer {
     background-color: #FFDDC1;
     text-align: center;
     padding: 10px;
 }
 
-/* Responsive Design */
+/* Responsive design: adjusting layout for tablets and smaller screens */
 @media (max-width: 768px) {
     nav ul {
-        flex-direction: column;
+        flex-direction: column; /* Stack the menu items vertically on smaller screens */
     }
 
     #gallery img {
-        width: 100%;
+        width: 100%; /* Make images full width on small screens for better viewing */
     }
 }
 
 @media (max-width: 480px) {
-    /* Add more responsive design elements here */
+    
 }
